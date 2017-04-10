@@ -11,8 +11,7 @@
 
   <div>
 
-    <img src="smartUptechheader.jpg" alt="homepage" width="1100" height="400" />
-
+    <img src="./images/th_banner.png" alt="main_banner" width="1100" height="400" />
   </div>
 
 	<div class="container">
@@ -47,19 +46,48 @@
 
   				<div class="half column">
   					
-  					<a href="allproducts.html">
-    					<img onMouseMove="ImageSwapOn(this)" onMouseOut="ImageSwapOff(this)" src="3.jpg" alt="allgifts " style="width:480;height:400; ">
-					</a>
+	<form action="th_Login.php" method="post">
+		<fieldset>
+			<legend>Login:</legend>
+			Username<br>
+			<input type="text" name="UserName" required><br>
+			Password<br>
+			<input type="Password" name="PassWord"required><br>
+			<input type="submit">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>		
+		</fieldset>
+	</form>
 					
   				</div><!-- half column -->
 
   				<div class="half column">
   					
-  					<a href="products.html">
-   					 <img onMouseMove="ImageSwapOn1(this)" onMouseOut="ImageSwapOff1(this)" src="1.jpg " alt="selectgift" style="width:480;height:400;">
-					</a>
+	<form action="th_Registration.php" method="post">
+		<fieldset>
+			<legend>Registration:</legend>
+			Username<br>
+			<input type="text" name="UserName"required><br>
+			Password<br>
+			<input type="Password" name="PassWord"required><br>
+			Firstname<br>
+			<input type="text" name="FirstName"required><br>
+			Surname<br>
+			<input type="text" name="Surname"required><br>
+			DOB<br>
+			<br>
+			<!-- <input type="text" name="DOB"required><br> -->
+			<input type="submit">
+		</fieldset>
+	</form>
   				</div><!-- /half column -->
   			</div><!-- /row -->
+
 
 		</section><!-- /#section1 -->
 		<div id="table">
@@ -99,7 +127,7 @@
 		
 	
 		<footer>
-  			<p>&copy; Copyright <script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>, trackHapp</p>
+  			<p>&copy; Copyright <script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>, TrackHapp</p>
 		</footer>
 
 </body>
