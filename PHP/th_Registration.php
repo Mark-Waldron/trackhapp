@@ -10,8 +10,8 @@
 		$UserName = $_POST["UserName"];
 		$PassWord = $_POST["PassWord"];
 		$FirstName = $_POST["FirstName"];
-		$LastName = $_POST["Surename"];
-		$DOB = $_POST["DOB"];
+		$LastName = $_POST["Surname"];
+		
 		
 		
 		$servername = "localhost";
@@ -26,8 +26,8 @@
 			die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO Users ( UserName, PassWord, FirstName, Surename)
-			VALUES ('$UserName', '$Password', '$Firstname', '$Surename')";;
+	$sql = "INSERT INTO Persons ( UserName, PassWord, FirstName, LastName)
+			VALUES ('$UserName', '$PassWord', '$FirstName', '$LastName')";;
 		
 	if ($conn->query($sql) === TRUE)
 	{
