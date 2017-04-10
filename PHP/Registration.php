@@ -11,15 +11,11 @@
 		$Password = $_POST["PassWord"];
 		$Firstname = $_POST["FirstName"];
 		$Surename = $_POST["Surename"];
-		$Addressline = $_POST["AddressLine"];
-		$City = $_POST["City"];
-		$Telephone = $_POST["Telephone"];
-		$Mobile = $_POST["Mobile"];
 		
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$dbname = "web_dev_assignment";
+		$dbname = "oop-assignment";
 		
 		$conn = new mysqli($servername, $username, $password, $dbname);
 
