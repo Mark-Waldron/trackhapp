@@ -24,8 +24,8 @@
 			die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO Users ( UserName, PassWord, FirstName, Surename, AddressLine, City, Telephone, Mobile)
-			VALUES ('$UserName', '$Password', '$Firstname', '$Surename', '$Addressline', '$City', '$Telephone', '$Mobile')";;
+	$sql = "INSERT INTO Users ( UserName, PassWord, FirstName, Surename)
+			VALUES ('$UserName', '$Password', '$Firstname', '$Surename')";;
 		
 	if ($conn->query($sql) === TRUE)
 	{
