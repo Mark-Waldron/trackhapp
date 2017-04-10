@@ -119,3 +119,12 @@ border-radius: 20px;
 border-style: outset;
 
  }
+ 
+ legend {
+  padding: 0.4em 0.6em;
+  border:3px outset #8bcbc8;
+  border-radius: 5px;  
+  color:#8bcbc8;
+  font-size:80%;
+  text-align:center;
+  }
