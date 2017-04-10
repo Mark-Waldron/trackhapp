@@ -32,10 +32,6 @@
 	if ($conn->query($sql) === TRUE)
 	{
 		echo "Your are now added, you can now sign in";
-		
-		?>
-			<br><a href="http://localhost/WEBD/web_dev_assignment_Frontpage.html">Back to Login</a>
-		<?php	
 	} 
 	else 
 	{
