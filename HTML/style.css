@@ -32,11 +32,11 @@ header {
 
 nav {
   line-height: 20px;
-  background-color: gray;
+  background-color: #d9d9d9;
   height: 55px;
   color: white;
   font-size: 20px;
-  font-family: phosphate;
+  font-family: verdana;
   padding: 5px;
 }
 
@@ -63,23 +63,23 @@ h1 {
 }
 
 footer {
-  background-color: gray;
+  background-color: #d9d9d9;
   color: white;
   clear: both;
   text-align: center;
-  font-family: phosphate;
+  font-family: verdana;
   padding: 5px;
 }
 
 body {
-  font-family: phosphate;
+  font-family: verdana;
 }
 
 table.menutable {
   width: 33%;
   height: 35px;
   font-size: 20px;
-  background: gray;
+  background: #d9d9d9;
   padding: 5px;
 }
 
@@ -113,3 +113,9 @@ table.gifttable{
 	text-align: center;
 	}
 
+fieldset { 
+border:5px solid #8bcbc8;
+border-radius: 20px;
+border-style: outset;
+
+ }
