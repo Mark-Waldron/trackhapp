@@ -11,8 +11,7 @@
 
   <div>
 
-    <img src="smartUptechheader.jpg" alt="homepage" width="1100" height="400" />
-
+    <img src="./images/th_banner.png" alt="main_banner" width="1100" height="400" />
   </div>
 
 	<div class="container">
@@ -61,10 +60,43 @@
   				</div><!-- /half column -->
   			</div><!-- /row -->
 
+  			<div id="table">
+
+	<form action="th_login.php" method="post">
+		<fieldset>
+			<legend>Login:</legend>
+			Username<br>
+			<input type="text" name="UserName" required><br>
+			Password<br>
+			<input type="Password" name="PassWord"required><br>
+			<input type="submit">
+			
+		</fieldset>
+	</form>
+
+	<form action="th_Registration.php" method="post">
+		<fieldset>
+			<legend>Registration:</legend>
+			Username<br>
+			<input type="text" name="UserName"required><br>
+			Password<br>
+			<input type="Password" name="PassWord"required><br>
+			Firstname<br>
+			<input type="text" name="FirstName"required><br>
+			Surename<br>
+			<input type="text" name="Surname"required><br>
+			DOB<br>
+			<input type="date" name="DOB"required><br>
+		</fieldset>
+	</form>
+
+
+</div>   
+
 		</section><!-- /#section1 -->
 	
 		<footer>
-  			<p>&copy; Copyright <script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>, trackHapp</p>
+  			<p>&copy; Copyright <script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>, TrackHapp</p>
 		</footer>
 
 </body>
