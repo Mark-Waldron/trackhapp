@@ -16,7 +16,7 @@
 
 	<div class="container">
     	<nav>
-      	<table class="menutable">
+      	<!--<table class="menutable">
 
         <tr>
 
@@ -25,29 +25,33 @@
             <a href="index.html">TrackHapp</a>
             <br/>
 		 </td>	
-				<td onmouseover="showMenu( 'dropmenu') " onmouseout="hideMenu( 'dropmenu') ">
-				
-					<a href="#">Menu</a>
+			</tr>
+		</table>
+		-->				
+				<ul>
+					<li><a href="index.html" alt="Happy on the Go!">TrackHapp</a></li>					
+					<li><a href="#" alt="Back home!">Home</a></li>
+					<li><a href="#" alt="Check out the product!">Features</a></li>
+					<li><a href="#" alt="We love to hear from you!">Contact Us</a></li>
 					<br/>
-
+				</ul>
+<!--
 					<table class="menu" id="dropmenu">
 						<tr><td class="menu "><a href="index.html">Home</a></td></tr>
 						<tr><td class="menu "><a href="#">About Us</a></td></tr>
 						<tr><td class="menu "><a href="products.html">trackHapp_TBC</a></td></tr>
 						<tr><td class="menu "><a href="allproducts.html">trackHapp_TBC</a></td></tr>
 					</table>
+-->
 
-				</td>
-			</tr>
-		</table>
 	</nav>		
 	</div>
 		<section id="section1">
 
   				<div class="half column">
-  					
+  		<br>			
 	<form action="th_Login.php" method="post">
-		<fieldset>
+		<fieldset id="reg">
 			<legend>Login:</legend>
 			Username<br>
 			<input type="text" name="UserName" required><br>
@@ -62,7 +66,7 @@
 	<br>
 	
 	<form action="th_Registration.php" method="post">
-		<fieldset>
+		<fieldset id="reg">
 			<legend>Registration:</legend>
 			Username<br>
 			<input type="text" name="UserName"required><br>
