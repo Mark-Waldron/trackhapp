@@ -17,7 +17,7 @@
 	<?php
 	
 		$UserName = $_POST["UserName"];
-		$Password = $_POST["PassWord"];
+		$PassWord = $_POST["PassWord"];
 		$_SESSION['login_user'] = $_POST["UserName"];
 		 
 		$servername = "localhost";

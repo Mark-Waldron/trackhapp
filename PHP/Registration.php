@@ -8,9 +8,11 @@
 	
 	<?php
 		$UserName = $_POST["UserName"];
-		$Password = $_POST["PassWord"];
-		$Firstname = $_POST["FirstName"];
-		$Surename = $_POST["Surename"];
+		$PassWord = $_POST["PassWord"];
+		$FirstName = $_POST["FirstName"];
+		$LastName = $_POST["Surename"];
+		$DOB = $_POST["DOB"];
+		
 		
 		$servername = "localhost";
 		$username = "root";
