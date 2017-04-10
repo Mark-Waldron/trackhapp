@@ -39,16 +39,14 @@
 	if (mysqli_num_rows($result) > 0) 
 	{
 		
-		Header("Location: web_dev_assignment_Book_Search_and_Reserve.html");
+		echo "Correct";
 		 
 	} 
 	else 
 	{
 		echo "Invalid information, please try again";
 		
-		?>
-			<br><a href="http://localhost/WEBD/web_dev_assignment_Frontpage.html">Back to Login</a>
-		<?php	
+			
 	}
 	
 	
@@ -95,7 +93,7 @@
 		echo "Invalid information, please try again";
 		
 		?>
-			<br><a href="http://localhost/WEBD/web_dev_assignment_Frontpage.html">Back to Login</a>
+			<br><a href="http://localhost/">Back to Login</a>
 		<?php	
 	}
 	
