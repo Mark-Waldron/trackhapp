@@ -7,7 +7,9 @@
 <body>
 	
 	<?php
-		DiaryEntery = $_POST["DiaryEntery"];
+	
+	
+		$DiaryEntery = $_POST["DiaryEntery"];
 		
 		
 		
