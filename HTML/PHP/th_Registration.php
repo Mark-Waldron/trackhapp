@@ -32,6 +32,10 @@
 	if ($conn->query($sql) === TRUE)
 	{
 		echo "Your are now added, you can now sign in";
+		
+		?>
+			<br><a href="http://localhost/OOP-ASS/home_page.html">Back to Login</a>
+		<?php	
 	} 
 	else 
 	{
