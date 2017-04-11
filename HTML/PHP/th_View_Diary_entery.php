@@ -16,7 +16,7 @@
 		die("Connection failed: " . mysqli_connect_error());
 	}
 		
-	$sql = "SELECT DiaryEntery , DiaryEntery_2 , DiaryEntery_3 , DiaryEntery_4 , DiaryEntery_5  FROM Diary_Enterys";
+	$sql = "SELECT   DiaryEntery , DiaryEntery_2 , DiaryEntery_3 , DiaryEntery_4 , DiaryEntery_5 , DateOfEntery  FROM Diary_Enterys";
 	$result = mysqli_query($conn, $sql);
 
 	if (mysqli_num_rows($result) > 0) 
@@ -24,6 +24,10 @@
 		// output data of each row
 		while($row = mysqli_fetch_assoc($result)) 
 		{
+			
+			
+			echo "Date " . $row["DateOfEntery"]. "<br><br>";
+			
 			echo "Today I am grateful for: " . $row["DiaryEntery"]. "<br><br>";
 			
 			echo "What would make today great? " . $row["DiaryEntery_2"]. "<br><br>";

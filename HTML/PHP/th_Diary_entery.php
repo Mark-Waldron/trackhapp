@@ -14,6 +14,7 @@
 		$DiaryEntery_3 = $_POST["DiaryEntery_3"];
 		$DiaryEntery_4 = $_POST["DiaryEntery_4"];
 		$DiaryEntery_5 = $_POST["DiaryEntery_5"];
+		$DateOfEntery = $_POST["DateOfEntery"];
 		
 		
 		
@@ -29,8 +30,8 @@
 			die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO Diary_Enterys (DiaryEntery , DiaryEntery_2 , DiaryEntery_3 , DiaryEntery_4 , DiaryEntery_5 )
-			VALUES ('$DiaryEntery' , '$DiaryEntery_2' , '$DiaryEntery_3' , '$DiaryEntery_4', 'DiaryEntery_5')";;
+	$sql = "INSERT INTO Diary_Enterys (DiaryEntery , DiaryEntery_2 , DiaryEntery_3 , DiaryEntery_4 , DiaryEntery_5, DateOfEntery )
+			VALUES ( '$DiaryEntery' , '$DiaryEntery_2' , '$DiaryEntery_3' , '$DiaryEntery_4', '$DiaryEntery_5', '$DateOfEntery' )";;
 		
 	if ($conn->query($sql) === TRUE)
 	{
