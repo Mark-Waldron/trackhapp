@@ -46,66 +46,79 @@
 
 	</nav>		
 	</div>
-		<section id="section1">
-
-  				<div class="half column">
-<<<<<<< HEAD
-  		<br>			
-	<form action="th_Login.php" method="post">
-		<fieldset id="reg">
-=======
-  					
-	<form action="./PHP/th_Login.php" method="post">
-		<fieldset>
->>>>>>> 400271160886341526fc966d8bbbc625f59284ee
-			<legend>Login:</legend>
-			Username<br>
-			<input type="text" name="UserName" required><br>
-			Password<br>
-			<input type="Password" name="PassWord"required><br>
-			<input type="submit">
-			<br>
-			<br>
-			<br>		
-		</fieldset>
-	</form>
-	<br>
+		
+	<section id="section1">
+		<div class="half column">
+			<div class ="half">
+				<form action="./PHP/th_Login.php" method="post">
+				<fieldset>
+					<legend>Login:</legend>
+						Username<br>
+					<input type="text" name="UserName" required><br>
+					Password<br>
+					<input type="Password" name="PassWord"required><br>
+					<input type="submit">
+					<br>
+					<br>
+					<br>		
+				</fieldset>
+				</form>
+			</div> <!-- /half -->
 	
-<<<<<<< HEAD
-	<form action="th_Registration.php" method="post">
-		<fieldset id="reg">
-=======
-	<form action="./PHP/th_Registration.php" method="post">
-		<fieldset>
->>>>>>> 400271160886341526fc966d8bbbc625f59284ee
-			<legend>Registration:</legend>
-			Username<br>
-			<input type="text" name="UserName"required><br>
-			Password<br>
-			<input type="Password" name="PassWord"required><br>
-			Firstname<br>
-			<input type="text" name="FirstName"required><br>
-			Surname<br>
-			<input type="text" name="Surname"required><br>
-			<br>
-			<br>
-			<!-- <input type="text" name="DOB"required><br> -->
-			<input type="submit">
-		</fieldset>
-	</form>
-  			</div><!-- /half column -->
-  			</div><!-- /row -->
+			<div class ="half">
+				<form action="./PHP/th_Registration.php" method="post">
+				<fieldset>
+					<legend>Registration:</legend>
+					Username<br>
+					<input type="text" name="UserName"required><br>
+					Password<br>
+					<input type="Password" name="PassWord"required><br>
+					Firstname<br>
+					<input type="text" name="FirstName"required><br>
+					Surname<br>
+					<input type="text" name="Surname"required><br>
+					<br>
+					<br>
+					<!-- <input type="text" name="DOB"required><br> -->
+					<input type="submit">
+				</fieldset>
+				</form>
+			</div> <!-- /half -->			
+  		</div><!-- /half column -->
 
-
-		</section><!-- /#section1 -->
-		<div id="table">
-
-	</form>
-
-					
-  				</div><!-- half column -->
 
   				<div class="half column">
+  					<div class="format">
+  						<img src="./images/moment.png" alt="happy"/>
+  					</div> <!-- /format -->
+
+  					 <div class="format">
+  						<img src="./images/lifestyle.png" alt="lifestyle"/>
+  					</div> <!-- /format -->
+
+  					<div class="format">
+  						<img src="./images/meditation.png" alt="relax" />
+  					</div> <!-- /format -->
+
+  					<div class="format">
+  						<img src="./images/achievements.png" alt="achieve" />
+  					</div> <!-- /format -->
+  					
+  					<!-- 
+  					<fieldset class="information">
+  					<?php
+
+						$f = fopen("test.txt", "r");
+
+						// Read line by line until end of file
+						while(!feof($f)) { 
+	   					 echo fgets($f) . "<br />";
+						}
+
+						fclose($f);
+
+					?>
+				</fieldset> -->
   				</div><!-- /half column -->
   			</div><!-- /row -->
 
