@@ -3,7 +3,7 @@
 <head>
   <title>TrackHapp</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="index.js" type="text/javascript"></script>
+  <script src="./javascript/images.js" type="text/javascript"></script>
   <script src="dropmenu.js" type="text/javascript"></script>  
 </head>
 
@@ -50,7 +50,9 @@
 	<section id="section1">
 		<div class="half column">
 			<div class ="half">
-				<form action="./PHP/th_Login.php" method="post">
+				<img onMouseMove="ImageSwapOn(this)" onMouseOut="ImageSwapOff(this)" id="login" onclick="show('login_form')" src="login_fade.png"  alt="login" />	
+
+				<form action="./PHP/th_Login.php" method="post" id="login_form">
 				<fieldset>
 					<legend>Login:</legend>
 						Username<br>
@@ -62,11 +64,14 @@
 					<br>
 					<br>		
 				</fieldset>
-				</form>
+				</form> 
 			</div> <!-- /half -->
 	
 			<div class ="half">
-				<form action="./PHP/th_Registration.php" method="post">
+
+				<img onMouseMove="ImageSwapOn1(this)" onMouseOut="ImageSwapOff1(this)" id="reg" src="reg_fade.png" onclick="show('reg_form')" alt="reg" />
+
+				<form action="./PHP/th_Registration.php" method="post" id="reg_form">
 				<fieldset>
 					<legend>Registration:</legend>
 					Username<br>
