@@ -10,8 +10,9 @@
 	
 	
 		$DiaryEntery = $_POST["DiaryEntery"];
-		
-		
+		$DiaryEntery_2 = $_POST["DiaryEntery_2"];
+		$DiaryEntery_3 = $_POST["DiaryEntery_3"];
+		$DiaryEntery_4 = $_POST["DiaryEntery_4"];
 		
 		
 		$servername = "localhost";
@@ -26,8 +27,8 @@
 			die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO Diary_Enterys (DiaryEntery)
-			VALUES ('$DiaryEntery')";;
+	$sql = "INSERT INTO Diary_Enterys (DiaryEntery , DiaryEntery_2 , DiaryEntery_3 , DiaryEntery_4 )
+			VALUES ('$DiaryEntery' , '$DiaryEntery_2' , '$DiaryEntery_3' , '$DiaryEntery_4')";;
 		
 	if ($conn->query($sql) === TRUE)
 	{

@@ -50,11 +50,15 @@
 }
 
 /*#login_form {
+<<<<<<< HEAD
     display: block;
+=======
+    display: none;
+>>>>>>> 034d95ed117a010eb8111c42e46ad54ad283454b
     position: absolute;
     top: 0;
     right: 0;
-} 
+} */
 
 #reg_form {
     display: block;
