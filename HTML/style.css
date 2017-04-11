@@ -82,6 +82,21 @@ color: #8bcbc8;
 
 }
 
+.format.dash{
+  display: inline-block;
+  width: 23%;
+  /*height: 500px;*/
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 15px;
+
+}
+
 .jumbotron {
   max-width: 98%px;
   width: 80%;
