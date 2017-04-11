@@ -34,7 +34,7 @@
 		
 		
 	
-	$result = mysqli_query($conn, "SELECT UserName, Password FROM users WHERE UserName = '".$UserName."' AND  Password = '".$Password."'");
+	$result = mysqli_query($conn, "SELECT UserName, PassWord FROM Persons WHERE UserName = '".$UserName."' AND  PassWord = '".$PassWord."'");
 
 	if (mysqli_num_rows($result) > 0) 
 	{
