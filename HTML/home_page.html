@@ -9,9 +9,9 @@
 
 <body class="container">
 
-  <div>
+  <div class="header image">
 
-    <img src="./images/th_banner.png" alt="main_banner" width="1100" height="320" />
+    <img src="./images/th_banner.png" alt="main_banner" width="1100px" height="420px" />
   </div>
 
 	<div class="container">
@@ -50,8 +50,9 @@
 	<section id="section1">
 		<div class="half column">
 			<div class ="half">
-				<img onMouseMove="ImageSwapOn(this)" onMouseOut="ImageSwapOff(this)" id="login" onclick="show('login_form')" src="login_fade.png"  alt="login" />	
-
+				<img onMouseMove="ImageSwapOn(this)" onMouseOut="ImageSwapOff(this)" id="login" onclick="showLogForm()" src="login_fade.png"  alt="login" />	
+			</div>
+		<div class ="half">			
 				<form action="./PHP/th_Login.php" method="post" id="login_form">
 				<fieldset>
 					<legend>Login:</legend>
@@ -69,8 +70,9 @@
 	
 			<div class ="half">
 
-				<img onMouseMove="ImageSwapOn1(this)" onMouseOut="ImageSwapOff1(this)" id="reg" src="reg_fade.png" onclick="show('reg_form')" alt="reg" />
-
+				<img onMouseMove="ImageSwapOn1(this)" onMouseOut="ImageSwapOff1(this)" id="reg" src="reg_fade.png" onclick="showRegForm()" alt="reg" />
+			</div>
+			<div class ="half">
 				<form action="./PHP/th_Registration.php" method="post" id="reg_form">
 				<fieldset>
 					<legend>Registration:</legend>
