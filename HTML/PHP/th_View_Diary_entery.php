@@ -3,6 +3,9 @@
 <body>
 
 <?php
+
+	$DateSearch = $_POST["DateSearch"];
+	
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
@@ -16,7 +19,7 @@
 		die("Connection failed: " . mysqli_connect_error());
 	}
 		
-	$sql = "SELECT   DiaryEntery , DiaryEntery_2 , DiaryEntery_3 , DiaryEntery_4 , DiaryEntery_5 , DateOfEntery  FROM Diary_Enterys";
+	$sql = "SELECT   DiaryEntery , DiaryEntery_2 , DiaryEntery_3 , DiaryEntery_4 , DiaryEntery_5 , DateOfEntery  FROM Diary_Enterys Where DateOfEntery = '$DateSearch'";
 	$result = mysqli_query($conn, $sql);
 
 	if (mysqli_num_rows($result) > 0) 
