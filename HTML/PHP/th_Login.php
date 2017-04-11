@@ -93,7 +93,7 @@
 		echo "Invalid information, please try again";
 		
 		?>
-			<br><a href="http://localhost/">Back to Login</a>
+			<br><a href="http://localhost/OOP-ASS/home_page.html">Back to Login</a>
 		<?php	
 	}
 	
