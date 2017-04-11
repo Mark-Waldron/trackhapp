@@ -49,19 +49,27 @@
   background-color: #dae9e4;
 }
 
-/*#login_form {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
+    form {
+    display: block;
+    /*text-align: center;*/
+    margin: 0 auto;
+    }
+    
+input{
+    width: 98%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid outset;
+    border-radius: 15px;
 }
 
-#reg_form {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-}*/
+label{
+font-family: verdana;
+font-size: 1.35em;
+font-weight: bold;
+color: #8bcbc8;
+}
 
 .format{
   display: inline-block;
