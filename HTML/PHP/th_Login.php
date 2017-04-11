@@ -39,7 +39,7 @@
 	if (mysqli_num_rows($result) > 0) 
 	{
 		
-		echo "Correct";
+		Header("Location: Diary_entery.php");
 		 
 	} 
 	else 
