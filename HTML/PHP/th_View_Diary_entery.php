@@ -19,7 +19,7 @@
 		die("Connection failed: " . mysqli_connect_error());
 	}
 		
-	$sql = "SELECT   DiaryEntery , DiaryEntery_2 , DiaryEntery_3 , DiaryEntery_4 , DiaryEntery_5 , DateOfEntery  FROM Diary_Enterys Where DateOfEntery = '$DateSearch'";
+	$sql = "SELECT DiaryEntry , DiaryEntry_2 , DiaryEntry_3 , DiaryEntry_4 , DiaryEntry_5, DateOfEntry  FROM Diary_Entries Where DateOfEntry = '$DateSearch'";
 	$result = mysqli_query($conn, $sql);
 
 	if (mysqli_num_rows($result) > 0) 
@@ -29,17 +29,17 @@
 		{
 			
 			
-			echo "Date " . $row["DateOfEntery"]. "<br><br>";
+			echo "Date " . $row["DateOfEntry"]. "<br><br>";
 			
-			echo "Today I am grateful for: " . $row["DiaryEntery"]. "<br><br>";
+			echo "Today I am grateful for: " . $row["DiaryEntry"]. "<br><br>";
 			
-			echo "What would make today great? " . $row["DiaryEntery_2"]. "<br><br>";
+			echo "What would make today great? " . $row["DiaryEntry_2"]. "<br><br>";
 			
-			echo "People I am gratefull for:" . $row["DiaryEntery_3"]. "<br><br>";
+			echo "People I am gratefull for:" . $row["DiaryEntry_3"]. "<br><br>";
 			
-			echo "Amazing things that hapened today " . $row["DiaryEntery_4"]. "<br><br>";
+			echo "Amazing things that hapened today " . $row["DiaryEntry_4"]. "<br><br>";
 			
-			echo "How could I have made this day better? " . $row["DiaryEntery_5"]. "<br><br>";
+			echo "How could I have made this day better? " . $row["DiaryEntry_5"]. "<br><br>";
 		}
 	} 
 	else 
