@@ -3,8 +3,9 @@
 <head>
   <title>TrackHapp</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="./javascript/images.js" type="text/javascript"></script>
-  <script src="dropmenu.js" type="text/javascript"></script>  
+  <script src="./javascript/images.js" type="text/javascript"></script> 
+  <script src="./javascript/jquery-3.2.1.min.js" type="text/javascript"></script> 
+   
 </head>
 
 <body class="container">
@@ -27,27 +28,31 @@
 	</div>
 		
 	<div class="half column">
+		<div class="half">
+			<img src="./images/book_img.png" />	
+	</div> 
+	<div class="half column">
 	<form action="./PHP/th_Diary_entery.php" method="post">
 	<fieldset>
 	<legend>Diary Entery:</legend>
 		
-		<label for="DateOfEntery">Date:</label><br>
-		<input type="date" name="DateOfEntery"><br><br><br>
+		<label for="DateOfEntry">Date:</label><br>
+		<input type="date" name="DateOfEntry"><br><br><br>
 		
-		<label for="DiaryEntery">Today I am grateful for:</label><br>
-		<textarea id="DiaryEntery" name="DiaryEntery" row="10" cols="50"></textarea><br><br>
+		<label for="DiaryEntry">Today I am grateful for:</label><br>
+		<textarea id="DiaryEntry" name="DiaryEntry" row="10" cols="50"></textarea><br><br>
+
+		<label for="DiaryEntry_2">What would make today great?:</label><br>
+		<textarea id="DiaryEntry_2" name="DiaryEntry_2" row="10" cols="50"></textarea><br><br>
 		
-		<label for="DiaryEntery_2">What would make today great?:</label><br>
-		<textarea id="DiaryEntery_2" name="DiaryEntery_2" row="10" cols="50"></textarea><br><br>
+		<label for="DiaryEntry_3">People I am grateful for:</label><br>
+		<textarea id="DiaryEntry_3" name="DiaryEntry_3" row="10" cols="50"></textarea><br><br>
 		
-		<label for="DiaryEntery_3">People I am gratefull for:</label><br>
-		<textarea id="DiaryEntery_3" name="DiaryEntery_3" row="10" cols="50"></textarea><br><br>
+		<label for="DiaryEntry">Amazing things that happened today:</label><br>
+		<textarea id="DiaryEntry_4" name="DiaryEntry_4" row="10" cols="50"></textarea><br><br>
 		
-		<label for="DiaryEntery">Amazing things that hapened today:</label><br>
-		<textarea id="DiaryEntery_4" name="DiaryEntery_4" row="10" cols="50"></textarea><br><br>
-		
-		<label for="DiaryEntery_5">How could I have made this day better?:</label><br>		
-		<textarea id="DiaryEntery_5" name="DiaryEntery_5" row="10" cols="50"></textarea><br><br>
+		<label for="DiaryEntry_5">How could I have made this day better?:</label><br>		
+		<textarea id="DiaryEntry_5" name="DiaryEntry_5" row="10" cols="50"></textarea><br><br>
 		
 		<input type="submit" value="submit" />
 		<input type="reset" value="Clear" />
@@ -57,11 +62,7 @@
 	
 	 <li><a href="http://localhost/OOP-ASS/Search_Entries.html">Show</a></li>
 	</div>
-	
-	<div class="half column">
-		<p>
-		test
-		</p>
+
 	</div>
 	
 	

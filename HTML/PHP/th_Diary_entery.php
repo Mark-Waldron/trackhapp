@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Diary Entery</title>
+	<title>Diary Entry</title>
 </head>
 
 <body>
@@ -9,12 +9,12 @@
 	<?php
 	
 	
-		$DiaryEntery = $_POST["DiaryEntery"];
-		$DiaryEntery_2 = $_POST["DiaryEntery_2"];
-		$DiaryEntery_3 = $_POST["DiaryEntery_3"];
-		$DiaryEntery_4 = $_POST["DiaryEntery_4"];
-		$DiaryEntery_5 = $_POST["DiaryEntery_5"];
-		$DateOfEntery = $_POST["DateOfEntery"];
+		$DiaryEntry = $_POST["DiaryEntry"];
+		$DiaryEntry_2 = $_POST["DiaryEntry_2"];
+		$DiaryEntry_3 = $_POST["DiaryEntry_3"];
+		$DiaryEntry_4 = $_POST["DiaryEntry_4"];
+		$DiaryEntry_5 = $_POST["DiaryEntry_5"];
+		$DateOfEntry = $_POST["DateOfEntry"];
 		
 		
 		
@@ -30,12 +30,12 @@
 			die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO Diary_Enterys (DiaryEntery , DiaryEntery_2 , DiaryEntery_3 , DiaryEntery_4 , DiaryEntery_5, DateOfEntery )
-			VALUES ( '$DiaryEntery' , '$DiaryEntery_2' , '$DiaryEntery_3' , '$DiaryEntery_4', '$DiaryEntery_5', '$DateOfEntery' )";;
+	$sql = "INSERT INTO Diary_Entries (DiaryEntry , DiaryEntry_2 , DiaryEntry_3 , DiaryEntry_4 , DiaryEntry_5, DateOfEntry )
+			VALUES ( '$DiaryEntry' , '$DiaryEntry_2' , '$DiaryEntry_3' , '$DiaryEntry_4', '$DiaryEntry_5', '$DateOfEntry' )";;
 		
 	if ($conn->query($sql) === TRUE)
 	{
-		echo "Diary entery added, you can now sign in";
+		echo "Diary entry added, you can now sign in";
 	} 
 	else 
 	{
