@@ -39,7 +39,7 @@
 	if (mysqli_num_rows($result) > 0) 
 	{
 		
-		Header("Location: http://localhost/OOP-ASS/Diary_entery.html");
+		Header("Location: http://localhost/trackhapp/HTML/Diary_entery.html");
 		 
 	} 
 	else 
