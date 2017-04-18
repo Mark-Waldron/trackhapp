@@ -17,7 +17,6 @@
 		$DateOfEntry = $_POST["DateOfEntry"];
 		
 		
-		
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
