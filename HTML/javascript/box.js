@@ -9,6 +9,7 @@ function modify_qty(val) {
 	{
 		
 		alert("Congratulations, you have consumed the recomand daily amount of water!");
+		window.location.href = "./PHP/th_health.php?w1=" + qty + "&w2=" + new_qty;
 
 	}
     
@@ -27,6 +28,7 @@ function modify_qty_2(val_2) {
 	{
 		
 		alert("Congratulations, you have consumed the recomand daily amount of fruit!");
+		window.location.href = "./PHP/th_health.php?x1=" + qty_2 + "&x2=" + new_qty_2;
 
 	}
     
