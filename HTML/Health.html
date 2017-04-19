@@ -1,0 +1,86 @@
+<html>
+
+<head>
+
+<script type="text/javascript" src="./javascript/box.js"></script>
+
+<link rel="stylesheet" type="text/css" href="box.css"> 
+
+</head>
+
+<body>
+
+    <div class="box">    
+        <label for="qty"><abbr title="Quantity">Water</abbr></label>
+        <input id="qty" value="0ml" />
+        <button id="down" onclick="modify_qty(-100)">-</button>
+        <button id="up" onclick="modify_qty(100)">+</button>
+    </div>
+
+
+
+
+    <div class="box_2">    
+        <label for="qty_2"><abbr title="Quantity_2">5 A Day</abbr></label>
+        <input id="qty_2" value="0"/>
+        <button id="down_2" onclick="modify_qty_2(-1)">-</button>
+        <button id="up_2" onclick="modify_qty_2(1)">+</button>
+    </div>
+	
+
+
+<!-- We will replicate the digits now -->
+<div class="container">
+	<!-- time to add the controls -->
+	<input id="start" name="controls" type="radio" />
+	<input id="stop" name="controls" type="radio" />
+	<input id="reset" name="controls" type="radio" />
+	<div class="timer">
+		<div class="cell">
+			<div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell">
+			<div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell divider"><div class="numbers">:</div></div>
+		<div class="cell">
+			<div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+		</div>
+		<div class="cell">
+			<div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell divider"><div class="numbers">:</div></div>
+		<div class="cell">
+			<div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
+		</div>
+		<div class="cell">
+			<div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell divider"><div class="numbers">:</div></div>
+		<div class="cell">
+			<div class="numbers milisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell">
+			<div class="numbers tenmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell">
+			<div class="numbers hundredmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+	</div>
+	<!-- Lables for the controls -->
+	<div id="timer_controls">
+		<label for="start">Start</label>
+		<label for="stop">Stop</label>
+		<label for="reset">Reset</label>
+	</div>
+</div>
+
+	
+
+</body>
+
+</html>
+
+	
+
+	
