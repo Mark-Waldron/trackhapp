@@ -14,14 +14,14 @@ function bot() {
     var response = document.getElementById("response").value;
     console.log(response);
 
-    if (menu_option == 1) {
+    if (menu_option == 0) {
     output.innerHTML = '<h1>hello ' + response + '</h1>';
     document.getElementById("response").value = "";  
     question = '<h1>how old are you?</h1>';		
     setTimeout(timedQuestion, 2000);
     }
 
-    else if (menu_option == 2) {
+    else if (menu_option == 1) {
     output.innerHTML = '<h1>That means you were born in ' + (2017 - response) + '</h1>';
     document.getElementById("response").value = "";   
     question = '<h1>where are you from?</h1>';					      	
