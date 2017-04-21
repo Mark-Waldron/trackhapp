@@ -40,7 +40,7 @@
 .half {
   display: inline-block;
   display: -webkit-flex;
-  width: 48%;
+  width: 98%;
  /* height: 500px;*/
   margin-top: 15px;
   margin-bottom: 15px;
@@ -161,8 +161,8 @@ footer {
   color: white;
   clear: both;
   border:5px solid;
-  border-radius: 20px;
-  border-style: outset;
+ /* border-radius: 20px;
+  border-style: outset;*/
   text-align: center;
   font-family: verdana;
   padding: 5px;
