@@ -4,8 +4,9 @@ function modify_qty(val) {
     
     if (new_qty < 0) {
         new_qty = 0;
-    }
-	if(new_qty == 2000)
+    
+	}
+	if(new_qty > 1900)
 	{
 		
 		alert("Congratulations, you have consumed the recomand daily amount of water!");
@@ -24,7 +25,7 @@ function modify_qty_2(val_2) {
     if (new_qty_2 < 0) {
         new_qty_2 = 0;
     }
-	if(new_qty_2 == 5)
+	if(new_qty_2 > 4)
 	{
 		
 		alert("Congratulations, you have consumed the recomand daily amount of fruit!");

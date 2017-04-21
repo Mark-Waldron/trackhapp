@@ -7,42 +7,20 @@
 <body>
 	
 	<?php
-		$UserName = $_POST["UserName"];
-		$PassWord = $_POST["PassWord"];
-		$FirstName = $_POST["FirstName"];
-		$LastName = $_POST["Surname"];
 		
-		
-		
-		$servername = "localhost";
-		$username = "root";
-		$password = "";
-		$dbname = "oop-assignment";
-		
-		$conn = new mysqli($servername, $username, $password, $dbname);
+	include 'Db.php';
+	// Our database object
+	$db = new Db();    
 
-		if ($conn->connect_error)
-			{
-			die("Connection failed: " . $conn->connect_error);
-	}
+	// Quote and escape form submitted values
+	$UserName = $db -> quote($_POST['UserName']);
+	$PassWord = $db -> quote($_POST['PassWord']);
+	$FirstName = $db -> quote($_POST['FirstName']);
+	$LastName = $db -> quote($_POST['Surname']);
 	
-	$sql = "INSERT INTO Persons ( UserName, PassWord, FirstName, LastName)
-			VALUES ('$UserName', '$PassWord', '$FirstName', '$LastName')";;
-		
-	if ($conn->query($sql) === TRUE)
-	{
-		echo "Your are now added, you can now sign in";
-		
-		?>
-			<br><a href="http://localhost/trackhapp/HTML/home_page.html">Back to Login</a>
-		<?php	
-	} 
-	else 
-	{
-		echo "Error updating record: " . $conn->error;
-	}
-
-	$conn->close();
+	// Insert the values into the database
+	$result = $db -> query("INSERT INTO `persons` (`UserName`,`PassWord`,`FirstName`,`LastName`) VALUES (" . $UserName . "," . $PassWord  . "," . $FirstName . "," . $LastName . ")");
+			
 	?>
 
 </body>

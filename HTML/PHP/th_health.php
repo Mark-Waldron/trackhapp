@@ -4,17 +4,16 @@
 
 <?php
 
-	$hello = 0;
-	$hello_2 = 0;
+	$DateSearch = $_POST["DateSearch"];
 
    // Check if we have parameters w1 and w2 being passed to the script through the URL
-   if (isset($_GET["w1"]) && isset($_GET["w2"])) {
+   if (isset($_POST["w1"]) && isset($_POST["w2"])) {
 
  
 
       // Put the two words together with a space in the middle to form "hello world"
 
-      $hello = $_GET["w1"] . " " . $_GET["w2"];
+      $hello = $_POST["w1"] . " " . $_POST["w2"];
 
  
 
@@ -27,13 +26,13 @@
 }
 
 // Check if we have parameters w1 and w2 being passed to the script through the URL
-   if (isset($_GET["x1"]) && isset($_GET["x2"])) {
+   if (isset($_POST["x1"]) && isset($_POST["x2"])) {
 
  
 
       // Put the two words together with a space in the middle to form "hello world"
 
-      $hello_2 = $_GET["x1"] . " " . $_GET["x2"];
+      $hello_2 = $_POST["x1"] . " " . $_POST["x2"];
 
  
 
@@ -48,6 +47,7 @@
 	
 		$water = $hello;
 		$Fruit = $hello_2;
+	
 		
 		
 		
@@ -64,8 +64,8 @@
 			die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO achievement ( water , Fruit)
-			VALUES ('$water', '$Fruit')";;
+	$sql = "INSERT INTO achievement ( water , Fruit , DateOfEntry)
+			VALUES ('$water', '$Fruit', '$DateSearch')";;
 		
 	if ($conn->query($sql) === TRUE)
 	{
