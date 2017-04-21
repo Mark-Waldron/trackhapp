@@ -13,20 +13,23 @@ function myFunction() {
 //resp is id of paragraph under submit button
 //respond is name out div, same as output is name of div
 function userResponse(){
-    var userRsp = document.getElementById("response").value ="";
-    var respond = document.getElementById('respond');
-    //console.log(response);
+    var userRsp = document.getElementById("response").value;
+    
+    
+    //var respond = document.getElementById('respond');
+    	console.log(userRsp);
     resp.innerHTML = userRsp;
     
     if (response!=null)
     {
-    	 output.innerHTML = 'Hello ' + response + '! How can I help you today?';
+    	 output.innerHTML = 'Hello ' + userRsp + '! How can I help you today?';
          document.getElementById("resp").innerHTML=userRsp;
+         document.getElementById("response").value = " ";         
     }
     
-    if (response === 'features')
+    if (userRsp === 'features')
     {
-    	 output.innerHTML = 'You want help with ' + response + '! What is the issue?';
+    	 output.innerHTML = 'You want help with ' + userRsp + '! What is the issue?';
          document.getElementById("resp").innerHTML=userRsp;
 	}    	 
             
