@@ -9,18 +9,27 @@ function myFunction() {
 	output.innerHTML = question;												
 
 }
-
+//response is id of input box 
+//resp is id of paragraph under submit button
+//respond is name out div, same as output is name of div
 function userResponse(){
-    var userRsp = document.getElementById("response").value;
-    console.log(Response);
+    var userRsp = document.getElementById("response").value ="";
+    var respond = document.getElementById('respond');
+    //console.log(response);
     resp.innerHTML = userRsp;
     
-    if (Response!=null)
+    if (response!=null)
     {
-    	 userRsp ="Hello " + Response + "! How are you today?";
+    	 output.innerHTML = 'Hello ' + response + '! How can I help you today?';
          document.getElementById("resp").innerHTML=userRsp;
     }
-              
+    
+    if (response === 'features')
+    {
+    	 output.innerHTML = 'You want help with ' + response + '! What is the issue?';
+         document.getElementById("resp").innerHTML=userRsp;
+	}    	 
+            
 
 }
 
