@@ -44,6 +44,7 @@ function userResponse(){
     	//and not just a single word for their name!
     	{
     		output.innerHTML = 'Awesome, nice to meet you! How can I help?';
+         	clearChatValues();   		
     	}
     	else{
     	 output.innerHTML = greetRand + userRsp + '! How can I help you today?';
@@ -56,15 +57,28 @@ function userResponse(){
     	 userRsp = 'moments';
     	 output.innerHTML = 'You want help with ' + userRsp + '! What is the issue?';
          //document.getElementById("resp").innerHTML=userRsp;
-         clearChatValues();   
+         clearChatValues(); 
+          
 	}  
 	
-	else if (userRsp != '1' && menu_option != 1) //this is just testing some error checking, will make more sophisticated
+	/*var checkMoment = userRsp.includes("logging");
+	if (checkMoment === true)
+	{
+		output.innerHTML = 'Sure, if ' + userRsp + ' is the issue, you can do x, y and z to resolve';
+		clearChatValues(); 	
+	}*/
+	//I've replaced the above as a way to check for multiple terms
+	//I want to port this to momentsHelp() and develop help section further
+	if (['diary ', 'entry ', 'log ', 'logging '].indexOf(userRsp) >= 0) {
+		output.innerHTML = 'Sure, if ' + userRsp + ' is the issue, you can do x, y and z to resolve';
+		clearChatValues(); 
+	}
+	/*else if (userRsp != '1' && menu_option != 1) //this is just testing some error checking, will make more sophisticated
 	{
 	    output.innerHTML = 'Sorry, can you try again? If you choose an option we can take it from there!';
          //document.getElementById("resp").innerHTML=userRsp;
          clearChatValues(); 
-	}
+	}*/
 		  	             
 }
 
@@ -77,3 +91,6 @@ function clearChatValues (){
          console.log("this is usersp: " + userRsp);
 }
 
+function momentsHelp (){
+//to get this working I need to move variables out of userResponse function so all functions can read
+}
