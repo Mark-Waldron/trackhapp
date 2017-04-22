@@ -39,12 +39,12 @@ function userResponse(){
     
     if (menu_option < 2)
     {
-    	 output.innerHTML = 'Test ' + greetRand + userRsp + '! How can I help you today?';
+    	 output.innerHTML = greetRand + userRsp + '! How can I help you today?';
          //document.getElementById("resp").innerHTML=userRsp;
          document.getElementById("response").value = " ";         
     }
     
-    if (userRsp == 'features' && menu_option > 2)
+    if (userRsp == 'features' && menu_option >= 2)
     {
     	 output.innerHTML = 'You want help with ' + userRsp + '! What is the issue?';
          document.getElementById("resp").innerHTML=userRsp;

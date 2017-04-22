@@ -55,19 +55,38 @@
     margin: 0 auto;
     }
     
+robot {
+width: 25%;
+float: left;
+}    
+    
 input{
-    width: 98%;
+    width: 75%;
     padding: 12px 20px;
     margin: 10px 0;
     box-sizing: border-box;
     border: 2px solid outset;
     border-radius: 15px;
+    
 }
 
-#output, #respond{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  display: flex;
+  justify-content: center;
+}
+output{
+    /*display: flex;
+  */  
+  justify-content: center;
+    float: left;
+    width: 75%;
 }
 
 label{
