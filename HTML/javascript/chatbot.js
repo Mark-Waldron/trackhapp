@@ -4,9 +4,9 @@ function myFunction() {
     
     //document.getElementById("demo").outerHTML = "Test JS File";
     
-	var question = ['Hello, my name is TrackBot - what is your name?', 'Hey, what did ya say you are called?', 'Hola, que tal?'];				  
+	var question = ['Hello, my name is TrackBot - what is your name?', 'Hey, what did you say you are called?', 'Hola, como te llamas?'];				  
 	var questionRand = question[Math.floor(Math.random() * question.length)];
-	var output = document.getElementById('output');
+	var output = document.getElementById('demo');
 	output.innerHTML = questionRand;												
 
 }
@@ -25,7 +25,7 @@ function userResponse(){
 	var greetArray = [ 'Hi there ', 'Hello ', 'Greetings ', 'Wassup '];
 	var greetRand = greetArray[Math.floor(Math.random() * greetArray.length)];
     var userRsp = document.getElementById("response").value;
-	var output = document.getElementById('output');
+	var output = document.getElementById("demo");
 	    
     //counter to track responses
     menu_option++;
@@ -37,58 +37,43 @@ function userResponse(){
     console.log(output);
     //resp.innerHTML = userRsp;
     
-    if (menu_option < 2)
+    if (menu_option === 1)
     {
+    	var check = userRsp.includes(" ");
+    	if(check === true) //this is to catch if they've written for e.g. "my name is Cat"
+    	//and not just a single word for their name!
+    	{
+    		output.innerHTML = 'Awesome, nice to meet you! How can I help?';
+    	}
+    	else{
     	 output.innerHTML = greetRand + userRsp + '! How can I help you today?';
          //document.getElementById("resp").innerHTML=userRsp;
-         document.getElementById("response").value = " ";         
-    }
-    
-    if (userRsp == 'features' && menu_option >= 2)
+         clearChatValues();
+       	}
+    }  
+    if (userRsp === '1') //get the menu options changed to switch
     {
+    	 userRsp = 'moments';
     	 output.innerHTML = 'You want help with ' + userRsp + '! What is the issue?';
-         document.getElementById("resp").innerHTML=userRsp;
-         document.getElementById("response").value = " ";   
-	}    	 
-            
+         //document.getElementById("resp").innerHTML=userRsp;
+         clearChatValues();   
+	}  
+	
+	else if (userRsp != '1' && menu_option != 1) //this is just testing some error checking, will make more sophisticated
+	{
+	    output.innerHTML = 'Sorry, can you try again? If you choose an option we can take it from there!';
+         //document.getElementById("resp").innerHTML=userRsp;
+         clearChatValues(); 
+	}
+		  	             
 }
 
-/*function bot() { 
-    var response = document.getElementById("response").value;
-    console.log(response);
-
-    if (menu_option === 0) {
-    output.innerHTML = '<h1>hello ' + response + '</h1>';
-    document.getElementById("response").value = "";  
-    question = '<h1>how old are you?</h1>';		
-    setTimeout(timedQuestion, 2000);
-    }
-
-    else if (menu_option === 1) {
-    output.innerHTML = '<h1>That means you were born in ' + (2017 - response) + '</h1>';
-    document.getElementById("response").value = "";   
-    question = '<h1>where are you from?</h1>';					      	
-    setTimeout(timedQuestion, 2000);
-    }   
+//this function allows me to overwrite the values each time with new user input
+function clearChatValues (){
+         document.getElementById("response").value = " "; 
+         userRsp = document.getElementById("response").value = null;
+         output = document.getElementById("demo").value = " ";
+         console.log("this is output: " + output);  
+         console.log("this is usersp: " + userRsp);
 }
 
-function timedQuestion() {
-    output.innerHTML = question;
-}*/
-
-//push enter key (using jquery)
-//$(document).keypress(function(e) {
-  //if (e.which == 13) {
-  //  bot();																						
-   // menu_option++;																	
-//});
-
-/*document.getElementById("response")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode == 13) {
-        document.getElementById("responseBtn").click();
-        bot();
-        menu_option++;
-    }
-});*/

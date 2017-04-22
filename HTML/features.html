@@ -11,11 +11,12 @@
 
 <body>
 
-  <div class="container-fluid">
 
+<div class="jumbotron">	
     <img src="./images/th_banner.png" alt="main_banner"   />
-
-    	<nav class="navbar navbar-default">			
+    </div> <!-- end of jumbotron -->
+  <div class="container-fluid">
+    	<nav class="navbar navbar-default"">			
 				<ul>
 					<li><a href="home_page.html" alt="Happy on the Go!">TrackHapp</a></li>					
 					<li><a href="#" alt="Back home!">Home</a></li>
@@ -25,7 +26,7 @@
 				</ul>
 		</nav>		
 				
-		<!-- <div class='container'>  	<div class="clearfix .col-xs-5 .col-md-4">-->
+	<!-- <div class='container'>  	<div class="clearfix .col-xs-5 .col-md-4">-->
 	<div class='row'>	
  	<div class=".col-xs-6 .col-md-4">
 		<h1>TrackHapp Test ChatBot</h1></br>
@@ -35,21 +36,22 @@
 	
 	<div class="image-container">
        	<img src="./images/trackbot.png" alt="trackbot" />
+
+
     </div> <!-- end of image container -->
     
     <blockquote>
     	<p>I'm here to guide you through the features of the TrackHapp Application. I know this app inside out and want to share!</p>
-    	<footer>TrackHapp's Top Trackbot</footer>
+       	<div class="image-container"><button type="button" class="btn btn-info" onclick="myFunction()" >Start Chat</button></div>
   	</blockquote>  	
 	</div> <!-- end of div col-5 etc -->
 
-	<div class="col-sm-5 col-md-6 col-lg-4" style="background-color:blue;">
+	<div class="col-sm-5 col-md-6 col-lg-4">
 	<div class="button-container" id="output">
-		
-		<button type="button" class="btn btn-info" onclick="myFunction()" >Start Chat</button>
-        <p id="demo"></p>
+  	  </br></br><div id="demo"><h2 ></h2></div>
 
   	</div> <!-- end of output -->
+
    	</div> <!-- end of div col-5 etc -->
 
 		<div class="half">
@@ -64,6 +66,7 @@
 	
 	<footer>
   		<p>&copy; Copyright <script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>, TrackHapp</p>
+	
 	</footer>
 
 <!-- Latest compiled and minified JavaScript -->
